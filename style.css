@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family:EB Garamond;
+
+
+}
+body{
+    background-color:D1DCE6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    width: 100%;
+}
+.logo{
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D1DCE6;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border: 2px solid #9ca3ab;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #3f464e;
+}
+.container::before{
+content: "";
+position:absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #D1DCE6;
+border-radius: 10px;
+z-index: 0;
+}
+.login, .logo{
+    position:relative;
+    z-index: 1;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login h2 {
+    font-size: 2em;
+    color: #9ca3ab;
+}
+
+.login .inputBx {
+display: block;
+color: #9ca3ab;
+margin-bottom: 7px;
+}
+.login .inputBx label {
+    width: 100%;
+    padding: 12px 20px;
+    background:-moz-linear-gradient(to bottom, #555, #9ca3ab);
+    border: 2px solid #9ca3ab;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.login .inputBx input::placeholder{
+    color: #D1DCE6;
+}
+.button{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button{
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #D1DCE6, #555);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #9ca3ab;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button button :hover{
+    background: linear-gradient(to right, #555, #D1DCE6);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons i {
+    font-size: 2em;
+    color: #9ca3ab;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+ 
+ 
+.social-icons i:hover{
+    color: black;
+}
+.text-center {
+    text-align: center;
+    color: #9ca3ab;
+}
+.text-center a {
+    color: #9ca3ab;
+    text-decoration: none;
+}
+.text-center a:hover {
+    text-decoration: underline;
+}
+.social-login-text {
+    font-size: 0.8em;
+    color: #9ca3ab;
+}
